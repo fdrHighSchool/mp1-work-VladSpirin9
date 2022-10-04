@@ -2,9 +2,9 @@
 ## fall-22-mp1-work
 
 
-### Last Name:  
-### First Name: 
-### GitHub Username: 
+### Last Name:  Vlad
+### First Name: Spirin
+### GitHub Username: vladspirin9
 
 ---
 #### General Workflow: 
