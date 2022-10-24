@@ -45,22 +45,35 @@ public class UserName {
    */
   public static String generatePassword(int length) {
       String password = "";
-      
-      // loop 'length' times
-      
-      //generate a random number 
-      //from 65-90 capital letters
-      //from 97-122 lwrcase
-      //from 33-47 for special characters
-      int max = 90;
-      int min = 65;
-      int rand = (int)(Math.random()*(max - min + 1) + min);
-      char c = (char)rand;
-      
-      System.out.println(rand + "" + c);
-      //convert the random int to char, ex: c =(char)i;
-      //add char to password
-      
-      return password;
-  }
-} // end class
+      for(int i = 0; i < length; i++) {
+          // loop 'length' times}
+          //generate a random number 
+          //from 65-90 capital letters
+          //from 97-122 lwrcase
+          //from 33-47 for special characters
+          int choice = (int)(Math.random()* 3 + 1);
+          if (choice == 1) {
+              int max = 90;
+              int min = 65;
+            }
+          else if (choice == 2) {
+              int max = 97;
+              int min = 122;
+            }
+          else {
+              int max = 33;
+              int min = 47;
+            }
+          int rand = (int)(Math.random()*(max - min + 1) + min);
+          char c = (char)rand;
+    
+          // System.out.println(rand + "" + c);
+          //convert the random int to char, ex: c =(char)i;
+          //add char to password
+          password += c;
+          System.out.println(password);
+        }
+      return password; 
+    } 
+}
+// end class
